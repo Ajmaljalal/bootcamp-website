@@ -1,8 +1,8 @@
-@import './styles/feature.css';
-@import './styles/projects.css';
-@import './styles/syllabus.css';
-@import './styles/pricing.css';
-@import './styles/register.css';
+@import "./styles/feature.css";
+@import "./styles/projects.css";
+@import "./styles/syllabus.css";
+@import "./styles/pricing.css";
+@import "./styles/register.css";
 
 .container {
   width: 100%;
@@ -14,14 +14,13 @@
   height: 8vh;
   min-height: 60px;
   width: 100%;
-  background-color:  rgb(20, 30, 88);
+  background-color: #137dce;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
   box-sizing: border-box;
   padding: 0 50px;
-
 }
 
 .header__logo {
@@ -29,7 +28,7 @@
   font-weight: bold;
   font-size: 25px;
   padding-left: 20px;
-  font-family: 'Alfa Slab One', cursive;
+  font-family: "Alfa Slab One", cursive;
   letter-spacing: 4px;
   color: rgb(210, 226, 245);
   cursor: pointer;
@@ -47,7 +46,7 @@
   padding: 5px 20px;
 }
 
-.header__btns__btn:hover{
+.header__btns__btn:hover {
   border: 1px solid rgb(210, 226, 245);
   cursor: pointer;
 }

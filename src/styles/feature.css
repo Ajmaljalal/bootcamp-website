@@ -1,6 +1,6 @@
 .feature {
   height: 91.8vh;
-  background-image: url('../assets/landing-page-image1.png');
+  background-image: url("../assets/landing-page-image1.png");
   background-size: 700px 700px;
   background-position: 87% 60%;
   background-repeat: no-repeat;
@@ -10,25 +10,24 @@
   background-color: rgb(210, 226, 245);
 }
 
-.feature__text{
+.feature__text {
   width: 60%;
 }
 
-.feature__text__header{
-  font-family: 'Alfa Slab One', cursive;
+.feature__text__header {
+  font-family: "Open Sans", sans-serif;
   font-size: 50px;
   margin: 0;
-  letter-spacing: 4px;
+  letter-spacing: 0.5px;
 }
 
-.feature__text__desc{
-  color: gray;
+.feature__text__desc {
   margin: 40px 0;
   font-size: 18px;
   width: 90%;
 }
 
-.feature__text__btn{
+.feature__text__btn {
   border: none;
   outline: none;
   background: black;
@@ -40,7 +39,8 @@
   margin-top: 20px;
   margin-right: 30px;
 }
-.feature__text__btn--outlined{
+
+.feature__text__btn--outlined {
   border: 1px solid black;
   color: black;
   background-color: rgb(210, 226, 245);

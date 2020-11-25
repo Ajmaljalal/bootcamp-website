@@ -6,15 +6,15 @@
   background-color: rgb(210, 226, 245);
 }
 
-.pricing__text{
+.pricing__text {
   width: 48%;
 }
 
-.pricing__text__header{
-  font-family: 'Alfa Slab One', cursive;
+.pricing__text__header {
+  font-family: "Open Sans", sans-serif;
   font-size: 50px;
   margin: 0;
-  letter-spacing: 4px;
+  letter-spacing: 0.5px;
 }
 
 .pricing__text__header span {
@@ -25,11 +25,10 @@
   border-radius: 3px;
   font-size: 47px;
   display: inline-block;
-  transform: rotateZ(-15deg);
   margin-bottom: 10px;
 }
 
-.pricing__text__desc{
+.pricing__text__desc {
   color: gray;
   margin: 40px 0;
   font-size: 18px;
@@ -78,7 +77,7 @@
   margin: 30px 0;
 }
 
-.pricing__box__btn{
+.pricing__box__btn {
   border: none;
   outline: none;
   background: rgb(20, 30, 88);
@@ -90,16 +89,15 @@
   margin-top: 20px;
   border-radius: 5px;
 }
-.pricing__box__btn--outlined{
+.pricing__box__btn--outlined {
   color: black;
   background-color: rgb(210, 226, 245);
 }
 
 .pricing__box--upfront {
-  background-color:  rgb(20, 30, 88);
+  background-color: rgb(20, 30, 88);
   color: rgb(210, 226, 245);
 }
 .pricing__box--monthly {
   border: 1px solid rgb(20, 30, 88);
-
 }
