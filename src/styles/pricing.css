@@ -103,4 +103,5 @@
 }
 .pricing__box--monthly {
   border: 1px solid rgb(20, 30, 88);
+  background-color: rgb(210, 226, 245);
 }

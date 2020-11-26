@@ -1,11 +1,96 @@
 .register-w {
-  height: 91.8vh;
-  background-image: url('../assets/landing-page-image1.png');
+  height: 92vh;
+  background-image: url("../assets/register-page-image1.png");
   background-size: 700px 700px;
-  background-position: 87% 60%;
+  background-position: 95% 60%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   padding: 0 80px;
   background-color: rgb(226, 235, 247);
+}
+
+.form-container {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
+.explanation {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+.explain-paragraph {
+  font-size: 17.5px;
+}
+
+.input-row {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 17px;
+}
+
+.input-field,
+.input-field-address,
+.input-field-occupation,
+.input-field-city,
+.input-field-state,
+.input-field-zip_code {
+  outline: none;
+  border: none;
+  min-height: 43px;
+  min-width: 310px;
+  border-radius: 0.25rem;
+  padding: 0 10px;
+  font-size: 16px;
+  transition: box-shadow 0.25s cubic-bezier(1, 1, 0.21, 0.21);
+}
+
+.input-field-address,
+.input-field-occupation {
+  min-width: 658px;
+}
+
+.input-field-city,
+.input-field-state,
+.input-field-zip_code {
+  min-width: 195px;
+}
+
+input:focus {
+  box-shadow: 0 0 1pt 1pt #112f9f;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+.submit {
+  background: #1260f1;
+  border: none;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 43px;
+  margin-left: 15px;
+  border-radius: 0.25rem;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.15s background ease-in;
+}
+
+.submit:hover {
+  background-color: #112f9f;
 }

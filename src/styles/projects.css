@@ -1,5 +1,5 @@
 .projects-w {
-  height: 91.8vh;
+  min-height: 92vh;
   box-sizing: border-box;
   /* background-image: url('../assets/landing-page-image1.png');
   background-size: 700px 700px;
