@@ -1,7 +1,7 @@
 .register-w {
   height: 92vh;
   background-image: url("../assets/register-page-image1.png");
-  background-size: 700px 700px;
+  background-size: 600px 600px;
   background-position: 95% 60%;
   background-repeat: no-repeat;
   display: flex;
