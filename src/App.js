@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimateOnChange } from 'react-animation'
 import "./App.css";
 import Feature from './containers/Feature';
 import Projects from './containers/Projects';
@@ -11,6 +12,9 @@ class App extends React.Component {
   }
 
   setCurrentScreen = (screenName) => {
+    if (this.state.currentScreen === screenName) {
+      return
+    }
     this.setState({
       currentScreen: screenName
     })
@@ -34,18 +38,36 @@ class App extends React.Component {
     }
   }
   render() {
+    const { currentScreen } = this.state
     return (
       <div className='container'>
         <div className='header'>
           <div className='header__logo' onClick={() => this.setCurrentScreen('feature')}>Code-EX</div>
           <div className='header__btns'>
-            <div className='header__btns__btn' onClick={() => this.setCurrentScreen('projects')}>Projects</div>
-            <div className='header__btns__btn' onClick={() => this.setCurrentScreen('syllabus')}>Syllabus</div>
-            <div className='header__btns__btn' onClick={() => this.setCurrentScreen('pricing')}>Pricing</div>
-            <div className='header__btns__btn' onClick={() => this.setCurrentScreen('register')}>Register</div>
+            <div className='header__btns__btn'
+              onClick={() => this.setCurrentScreen('projects')}
+              style={{ border: currentScreen === 'projects' ? '1px solid rgb(210, 226, 245)' : '1px solid transparent' }}
+            >
+              Projects
+            </div>
+            <div className='header__btns__btn'
+              onClick={() => this.setCurrentScreen('syllabus')}
+              style={{ border: currentScreen === 'syllabus' ? '1px solid rgb(210, 226, 245)' : '1px solid transparent' }}
+            >
+              Syllabus
+            </div>
+            <div className='header__btns__btn'
+              onClick={() => this.setCurrentScreen('pricing')}
+              style={{ border: currentScreen === 'pricing' ? '1px solid rgb(210, 226, 245)' : '1px solid transparent' }}
+            >
+              Pricing
+            </div>
+            <div className='header__btns__btn header__btns__btn--bg' onClick={() => this.setCurrentScreen('register')}>Register</div>
           </div>
         </div>
-        {this.renderCurrentScreen()}
+        <AnimateOnChange animation="fade" className='full-width'>
+          {this.renderCurrentScreen()}
+        </AnimateOnChange>
       </div>
     );
   }

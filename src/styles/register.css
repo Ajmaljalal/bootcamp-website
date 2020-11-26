@@ -1,13 +1,13 @@
 .register-w {
   height: 92vh;
-  width: 100%;
   background-image: url("../assets/register-page-image1.png");
   background-size: 700px 700px;
   background-position: 95% 60%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  background-color: rgb(210, 226, 245);
+  padding: 0 80px;
+  background-color: rgb(226, 235, 247);
 }
 
 .form-container {
