@@ -1,11 +1,53 @@
 .projects-w {
   height: 91.8vh;
-  background-image: url('../assets/landing-page-image1.png');
+  box-sizing: border-box;
+  /* background-image: url('../assets/landing-page-image1.png');
   background-size: 700px 700px;
   background-position: 87% 60%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   display: flex;
-  align-items: center;
-  padding: 0 80px;
-  background-color: rgb(210, 226, 245);
+  flex-direction: column;
+  padding: 30px 70px;
+  background-color: rgb(226, 235, 247);
+}
+
+.projects__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: .5px solid rgb(182, 182, 182);
+}
+
+.projects__header__btns-w {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+
+.projects__header__btn {
+  padding: 10px;
+  padding-bottom: 15px;
+  border-bottom: 6px solid transparent;
+  border-radius: 2px;
+  color: rgb(160, 160, 160);
+  cursor: pointer;
+}
+
+.projects__header__btn--border-bottom {
+  border-bottom: 6px solid #0c79cc;
+}
+
+.projects__list {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projects__list-item {
+  width: 430px;
+  height: 500px;
+  border-radius: 10px;
+  background: white;
+  margin-bottom: 20px;
 }
