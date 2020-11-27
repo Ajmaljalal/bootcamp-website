@@ -75,6 +75,10 @@ class App extends React.Component {
           {this.renderCurrentScreen()}
         </AnimateOnChange>
         {this.state.currentScreen === 'feature' ? <More/> : null}
+        <div className='footer-w'>
+          <div className='footer__logo'></div>
+          <div className='footer__'></div>
+        </div>
       </div>
     );
   }
