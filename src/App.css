@@ -3,6 +3,7 @@
 @import "./styles/syllabus.css";
 @import "./styles/pricing.css";
 @import "./styles/register.css";
+@import "./styles//more.css";
 
 .container {
   width: 100%;
@@ -16,7 +17,9 @@
 }
 
 .header {
-  height: 8vh;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
   min-height: 60px;
   width: 100%;
   background-color: #0c79cc;
@@ -30,10 +33,10 @@
 
 .header__logo {
   width: 150px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 25px;
   padding-left: 20px;
-  font-family: "Alfa Slab One", cursive;
+  font-family: Jura, Helvetica, Arial, sans-serif;
   letter-spacing: 4px;
   color: white;
   cursor: pointer;
@@ -47,9 +50,9 @@
 }
 
 .header__btns__btn {
-  padding: 5px 20px;
+  padding: 8px 20px;
   border-radius: 5px;
-  padding-bottom: 8px;
+  box-sizing: border-box;
 }
 
 .header__btns__btn:hover {
@@ -60,4 +63,5 @@
   background: rgb(210, 226, 245);
   color: black;
   margin-left: 5px;
+  border: 1px solid transparent;
 }

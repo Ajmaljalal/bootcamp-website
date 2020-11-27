@@ -6,6 +6,7 @@ import Projects from './containers/Projects';
 import Syllabus from './containers/Syllabus';
 import Pricing from './containers/Pricing';
 import Register from './containers/Register';
+import More from './containers/More';
 class App extends React.Component {
   state = {
     currentScreen: 'feature'
@@ -15,6 +16,11 @@ class App extends React.Component {
     if (this.state.currentScreen === screenName) {
       return
     }
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
     this.setState({
       currentScreen: screenName
     })
@@ -42,7 +48,7 @@ class App extends React.Component {
     return (
       <div className='container'>
         <div className='header'>
-          <div className='header__logo' onClick={() => this.setCurrentScreen('feature')}>Code-EX</div>
+          <div className='header__logo' onClick={() => this.setCurrentScreen('feature')}>CodeExpert</div>
           <div className='header__btns'>
             <div className='header__btns__btn'
               onClick={() => this.setCurrentScreen('projects')}
@@ -68,6 +74,7 @@ class App extends React.Component {
         <AnimateOnChange animation="fade" className='full-width'>
           {this.renderCurrentScreen()}
         </AnimateOnChange>
+        {this.state.currentScreen === 'feature' ? <More/> : null}
       </div>
     );
   }

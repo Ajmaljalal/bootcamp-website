@@ -1,13 +1,14 @@
 .feature {
-  height: 92vh;
+  height: 93vh;
   background-image: url("../assets/landing-page-image1.png");
-  background-size: 700px 700px;
+  background-size: 600px 600px;
   background-position: 95% 60%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   padding: 0 80px;
   background-color: rgb(226, 235, 247);
+  overflow: hidden;
 }
 
 .feature__text {
@@ -15,16 +16,17 @@
 }
 
 .feature__text__header {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 50px;
   margin: 0;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
 }
 
 .feature__text__desc {
   margin: 30px 0;
   font-size: 18px;
   width: 90%;
+  line-height: 30px;
 }
 
 .feature__text__btn {

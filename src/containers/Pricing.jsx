@@ -16,14 +16,14 @@ export default class Pricing extends Component {
             <div className='pricing__box__total'>$1,000</div>
             <p className='pricing__box__total-text'>PER MONTH</p>
             <img src={monthlyPayment} className='pricing__box__img' alt='full-payment' />
-            <button className='pricing__box__btn'>REGISTER NOW</button>
+            <button className='pricing__box__btn'>APPLY NOW</button>
           </div>
           <div className='pricing__box pricing__box--upfront'>
             <h3 className='pricing__box__header'>GOLDEN</h3>
             <div className='pricing__box__total'>$4,000</div>
             <p className='pricing__box__total-text'>IN FULL</p>
             <img src={fullPayment} className='pricing__box__img' alt='full-payment' />
-            <button className='pricing__box__btn pricing__box__btn--outlined'>REGISTER NOW</button>
+            <button className='pricing__box__btn pricing__box__btn--outlined'>APPLY NOW</button>
           </div>
         </div>
       </div>

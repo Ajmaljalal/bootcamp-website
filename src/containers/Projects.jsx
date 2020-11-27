@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { projects } from './data'
+import listIcon from '../assets/list.png'
+import gridIcon from '../assets/grid.png'
 
 export default class Projects extends Component {
 
@@ -52,7 +54,10 @@ export default class Projects extends Component {
             <div className={projects === 'react' ? 'projects__header__btn projects__header__btn--border-bottom' : 'projects__header__btn'} onClick={() => this.setCurrentProjectsTab('react')}>React & Redux</div>
             <div className={projects === 'node' ? 'projects__header__btn projects__header__btn--border-bottom' : 'projects__header__btn'} onClick={() => this.setCurrentProjectsTab('node')}>Node, Express & Databases</div>
           </div>
-          <div>list view</div>
+          <div className='projects__view-icons'>
+            <img src={listIcon} alt='list view'/>
+            <img src={gridIcon} alt='grid view'/>
+          </div>
         </div>
         <div className='projects__list'>
           {this.renderProjects()}
