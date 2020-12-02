@@ -23,7 +23,7 @@ export default class More extends Component {
           <h2>What is CodeExpert?</h2>
         </div>
         <div className='what__desc'>
-          CodeExpert is a 6 months coding bootcamp that unlike other bootcamps focuses more on the students than the code. We build our curriculum based on the responses of students and the experience of experts in the field. CodeExpert teaches the most essential skills and progarming languages to help students make real world web apps.
+          CodeExpert is a 6 months of projects building bootcamp that, unlike other bootcamps, focuses more on the implementation of skills in real world projects. We built our curriculum based on the experience of experts and the needs in the field. CodeExpert teaches the most essential skills and progarming languages to help students make real world web apps from scratch with minimun to no supervision.
           </div>
         {DesignSpots(pinkEllipse, 80, 50)}
         {DesignSpots(redDot, 50, 90)}

@@ -7,10 +7,10 @@ export default function Footer() {
         <div className="footer__logo__section">
           <div className="footer__logo">CodeExpert</div>
           <p className="footer__bio">
-            Our Web Development programs are designed to prepare students
-            for real work environments and make them skilled workforce with
+            Our Web Development program is designed to prepare students
+            for real work environments and make them skilled engineers with
             many capabilities. We achieve this by having one of the
-            strongest curriculums and senior developer instructors.
+            strongest curriculums and expert instructors.
           </p>
         </div>
         <div className="footer__quick__links__section">
