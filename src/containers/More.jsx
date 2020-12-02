@@ -1,25 +1,26 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import DesignSpots from './helpers/designSpots';
+import pinkEllipse from '../assets/ellipse-pink.svg'
+import redDot from '../assets/dot-red.svg'
+import cyanEllips from '../assets/ellipse-cyan.svg'
 
 export default class More extends Component {
   render() {
     return (
-      <div id='#more' className='more-w'>
-        <div className='more__title'>
-          <h2>What is CodeExpert</h2>
-        </div>
-        <div className='more__desc'>
-          CodeExpert is a 6 months coding bootcamp that unlike other bootcamps focuses more on the students than the code. We build our curriculum based on the responses of students and the experience of experts in the field. CodeExpert teaches the most essential skills and progarming languages to help students make real world web apps.
-        </div>
+      <Fragment>
+        {this.renderWhat()}
         <div className='info__why'>
-          <h3>Why CodeExpert?</h3>
-          <p>Our program is carefully designed to respond to the dynamic needs of the web development job market. At the end of the training, you will have gained the necessary skills to enter the market and secure a job.</p>
-          <ul>
-            <li>Experienced and Professional Instructors on hand</li>
-            <li>Student Support</li>
-            <li>Real World Front End, Back End and Full Stack Projects</li>
-            <li>Up to Date Training Materials</li>
-            <li>Resume and Job Interview Preparation</li>
-          </ul>
+          <div className='why__desc'>
+            <h2>Why CodeExpert?</h2>
+            <p>Our program is carefully designed to respond to the dynamic needs of the web development job market. At the end of the training, you will have gained the necessary skills to enter the market and secure a job.</p>
+            <ul>
+              <li>Experienced and Professional Instructors on hand</li>
+              <li>Student Support</li>
+              <li>Real World Front End, Back End and Full Stack Projects</li>
+              <li>Up to Date Training Materials</li>
+              <li>Resume and Job Interview Preparation</li>
+            </ul>
+          </div>
         </div>
         <div className='info__cards-w'>
           <div className='info__card'>
@@ -54,6 +55,22 @@ export default class More extends Component {
             </ul>
           </div>
         </div>
+      </Fragment>
+    )
+  }
+
+  renderWhat = () => {
+    return (
+      <div id='#more' className='info__what'>
+        <div className='what__title'>
+          <h2>What is CodeExpert?</h2>
+        </div>
+        <div className='what__desc'>
+          CodeExpert is a 6 months coding bootcamp that unlike other bootcamps focuses more on the students than the code. We build our curriculum based on the responses of students and the experience of experts in the field. CodeExpert teaches the most essential skills and progarming languages to help students make real world web apps.
+          </div>
+        {DesignSpots(pinkEllipse, 80, 50)}
+        {DesignSpots(redDot, 50, 90)}
+        {DesignSpots(cyanEllips, 20, 40)}
       </div>
     )
   }

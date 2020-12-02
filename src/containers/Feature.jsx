@@ -1,4 +1,11 @@
 import React, { Component } from 'react'
+import DesignSpots from './helpers/designSpots';
+import instructorIcon from '../assets/instructor.svg'
+import supportIcon from '../assets/suport.svg'
+import interviewIcon from '../assets/interview.svg'
+import blueEllipse from '../assets/ellipse-bluet.svg'
+import purpleDot from '../assets/dot-purple.svg'
+import redEllips from '../assets/ellipse-pink.svg'
 
 export default class Feature extends Component {
   setScreen = (screen) => {
@@ -6,21 +13,63 @@ export default class Feature extends Component {
     screenChangerFunc(screen)
   }
   render() {
-
     return (
       <div className='feature'>
-        <div className='feature__text'>
-          <h1 className='feature__text__header'>Become a web developer by building real world projects</h1>
-          <div className='feature__divider' />
-          <p className='feature__text__desc'>With CodeExpert, by building dozens of real world projects with enterprise level professionals, programing makes much more sense</p>
-          <button className='feature__text__btn' onClick={() => this.setScreen('register')}>Apply Now</button>
-          <button
-            onClick={() => document.getElementById('#more').scrollIntoView(
-              { behavior: "smooth" }
-            )}
-            className='feature__text__btn feature__text__btn--outlined'>
-            Learn More
+        {this.renderMain()}
+        {this.renderPerks()}
+        {DesignSpots(blueEllipse, 50, 20)}
+        {DesignSpots(purpleDot, 20, 80)}
+        {DesignSpots(redEllips, 90, 50)}
+      </div>
+    )
+  }
+
+  renderMain = () => {
+    return (
+      <div className='feature__text'>
+        <h1 className='feature__text__header'>Become a <span>web developer</span> by building real world projects</h1>
+        <p className='feature__text__desc'>With CodeExpert, by building dozens of real world projects with enterprise level professionals, programing makes much more sense</p>
+        <button className='feature__text__btn' onClick={() => this.setScreen('register')}>Apply Now</button>
+        <button
+          onClick={() => document.getElementById('#more').scrollIntoView(
+            { behavior: "smooth" }
+          )}
+          className='feature__text__btn feature__text__btn--outlined'>
+          Learn More
             </button>
+      </div>
+    )
+  }
+
+  renderPerks = () => {
+    return (
+      <div className='feature__perks-w'>
+        <div className='feature__perks__card'>
+          <div className='perks__card__right-border'></div>
+          <div className='perks__card__icon perks__card__icon--primary'>
+            <img src={instructorIcon} alt='instructor' />
+          </div>
+          <div className='perks__card__text'>
+            Professional Instructors
+            </div>
+        </div>
+        <div className='feature__perks__card'>
+          <div className='perks__card__right-border'></div>
+          <div className='perks__card__icon'>
+            <img src={supportIcon} alt='instructor' />
+          </div>
+          <div className='perks__card__text'>
+            Student Support & Guidelines
+            </div>
+        </div>
+        <div className='feature__perks__card'>
+          <div className='perks__card__right-border'></div>
+          <div className='perks__card__icon'>
+            <img src={interviewIcon} alt='instructor' />
+          </div>
+          <div className='perks__card__text'>
+            Job Interview Preparation
+            </div>
         </div>
       </div>
     )

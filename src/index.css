@@ -1,18 +1,14 @@
 html {
   margin: 0;
   padding: 0;
-  width: 98.932vw;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
 }
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  background-color: rgb(226, 235, 247);
   box-sizing: border-box;
-  font-family: Ubuntu, Helvetica,Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-top: 60px;
@@ -24,5 +20,5 @@ code {
 }
 
 h1, h2, h3 {
-    font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
