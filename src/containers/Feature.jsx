@@ -32,11 +32,11 @@ export default class Feature extends Component {
         <button className='feature__text__btn' onClick={() => this.setScreen('register')}>Apply Now</button>
         <button
           onClick={() => document.getElementById('#more').scrollIntoView(
-            { behavior: "smooth" }
+          { behavior: "smooth" }
           )}
           className='feature__text__btn feature__text__btn--outlined'>
           Learn More
-            </button>
+        </button>
       </div>
     )
   }

@@ -120,3 +120,17 @@
   box-sizing: border-box;
 
 }
+
+@media screen and (max-width: 1124px) {
+  .feature {
+    background-size: 400px 400px;
+    background-position: 100% 60%;
+    padding:  0 80px;
+  }
+  .feature__text {
+    width: 60%;
+  }
+  .feature__text__header {
+    font-size: 30px;
+  }
+}
