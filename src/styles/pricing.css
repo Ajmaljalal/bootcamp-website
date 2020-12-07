@@ -7,6 +7,7 @@
   padding: 0 auto;
   background-color: var(--bgSecondary);
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .pricing__text {
@@ -22,12 +23,14 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 50px;
+  text-align: center;
 }
 
 .pricing__text__desc {
   color: #374E70;
   font-size: 16px;
   line-height: 26px;
+  text-align: center;
 }
 
 .pricing__boxes-w {
@@ -102,4 +105,25 @@
   line-height: 26px;
   background: var(--white);
   color: var(--primary);
+}
+
+@media screen and (max-width: 765px) {
+  .pricing-w {
+    height: auto;
+    padding: 0 20px;
+    padding-bottom: 100px;
+  }
+
+  .pricing__boxes-w {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pricing__box {
+    min-width: 300px;
+    margin-bottom: 30px;
+
+  }
 }
