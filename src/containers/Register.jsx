@@ -74,14 +74,12 @@ export default class Register extends Component {
                 required
               />
             </div>
-            <div className="input-field-container">
-              <div className="input-container">
-                <input
-                  className="input-field-zip_code"
-                  type="text"
-                  placeholder="Zip Code"
-                />
-              </div>
+            <div className="input-container">
+              <input
+                className="input-field-zip_code"
+                type="text"
+                placeholder="Zip Code"
+              />
             </div>
           </div>
           <div className="input-row">
