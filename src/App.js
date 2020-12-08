@@ -91,7 +91,7 @@ class App extends React.Component {
                   : "black",
             }}
           >
-            Syllabus
+            Curriculum
             </div>
           <div
             className="header__btns__btn"
@@ -109,7 +109,7 @@ class App extends React.Component {
             className="header__btns__btn header__btns__btn--bg"
             onClick={() => this.setCurrentScreen("register")}
           >
-            Register
+            Apply Now
             </div>
         </div>
       </div>

@@ -22,7 +22,8 @@
 
 .full-width {
   width: 100%;
-  background-color: rgb(226, 235, 247);
+  height: 94vh;
+  background-color: var(--white);
   position: relative;
   z-index: 800;
 }

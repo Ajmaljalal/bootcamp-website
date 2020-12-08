@@ -8,7 +8,7 @@ export default class Pricing extends Component {
       <div className='pricing-w'>
         <div className='pricing__text'>
           <h1 className='pricing__text__header'>It's just $5,000 for the whole 6 months</h1>
-          <p className='pricing__text__desc'>You can choose to pay the whole amount upfront or pay it in installments.</p>
+          <p className='pricing__text__desc'>You can choose to pay it upfront or monthly.</p>
         </div>
         <div className='pricing__boxes-w'>
           <div className='pricing__box'>
