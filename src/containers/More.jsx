@@ -1,17 +1,46 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import DesignSpots from './helpers/designSpots';
+import pinkEllipse from '../assets/ellipse-pink.svg'
+import redDot from '../assets/dot-red.svg'
+import cyanEllips from '../assets/ellipse-cyan.svg'
+import whyCodeExperImage from '../assets/why.svg'
+import technologiesIcon from '../assets/technologies.svg'
+import toolsIcon from '../assets/tools.svg'
+import titlesIcon from '../assets/titles.svg'
 
 export default class More extends Component {
   render() {
     return (
-      <div id='#more' className='more-w'>
-        <div className='more__title'>
-          <h2>What is CodeExpert</h2>
+      <Fragment>
+        {this.renderWhat()}
+        {this.renderWhy()}
+        {this.renderInfoCards()}
+      </Fragment>
+    )
+  }
+
+  renderWhat = () => {
+    return (
+      <div id='#more' className='info__what'>
+        <div className='what__title'>
+          <h2>What is CodeExpert?</h2>
         </div>
-        <div className='more__desc'>
-          CodeExpert is a 6 months coding bootcamp that unlike other bootcamps focuses more on the students than the code. We build our curriculum based on the responses of students and the experience of experts in the field. CodeExpert teaches the most essential skills and progarming languages to help students make real world web apps.
-        </div>
-        <div className='info__why'>
-          <h3>Why CodeExpert?</h3>
+        <div className='what__desc'>
+          CodeExpert is a 6 months of projects building bootcamp that, unlike other bootcamps, focuses more on the implementation of skills in real world projects. We built our curriculum based on the experience of experts and the needs in the field. CodeExpert teaches the most essential skills and progarming languages to help students make real world web apps from scratch with minimun to no supervision.
+          </div>
+        {DesignSpots(pinkEllipse, 80, 50)}
+        {DesignSpots(redDot, 50, 90)}
+        {DesignSpots(cyanEllips, 20, 40)}
+      </div>
+    )
+  }
+
+  renderWhy = () => {
+    return (
+      <div className='info__why'>
+        <img src={whyCodeExperImage} alt='whycodeexperticon' />
+        <div className='why__desc'>
+          <h2>Why CodeExpert?</h2>
           <p>Our program is carefully designed to respond to the dynamic needs of the web development job market. At the end of the training, you will have gained the necessary skills to enter the market and secure a job.</p>
           <ul>
             <li>Experienced and Professional Instructors on hand</li>
@@ -20,10 +49,22 @@ export default class More extends Component {
             <li>Up to Date Training Materials</li>
             <li>Resume and Job Interview Preparation</li>
           </ul>
+          <button className='feature__text__btn'>Apply Now</button>
         </div>
-        <div className='info__cards-w'>
+      </div>
+    )
+  }
+
+  renderInfoCards = () => {
+    return (
+      <div className='info__cards-w'>
+        <h2>There are tons of skills and opportunities with CodeExpert!</h2>
+        <div className='info__cards'>
           <div className='info__card'>
-            <h3>Technologies you will learn</h3>
+            <div className='card__header'>
+              <img src={technologiesIcon} alt='technologiesicon' />
+              <h3>Technologies you will learn</h3>
+            </div>
             <ul>
               <li>HTML5</li>
               <li>CSS3</li>
@@ -35,7 +76,10 @@ export default class More extends Component {
             </ul>
           </div>
           <div className='info__card'>
-            <h3>Tools you will learn</h3>
+            <div className='card__header'>
+              <img src={toolsIcon} alt='technologiesicon' />
+              <h3>Tools you will learn</h3>
+            </div>
             <ul>
               <li>Git/Github</li>
               <li>Terminal</li>
@@ -44,7 +88,10 @@ export default class More extends Component {
             </ul>
           </div>
           <div className='info__card'>
-            <h3>Titles you will gain</h3>
+            <div className='card__header'>
+              <img src={titlesIcon} alt='technologiesicon' />
+              <h3>Titles you will gain</h3>
+            </div>
             <ul>
               <li>Front End Developer</li>
               <li>Back End Developer</li>
@@ -54,6 +101,8 @@ export default class More extends Component {
             </ul>
           </div>
         </div>
+        <h2>Ready to become a web developer?</h2>
+        <button className='feature__text__btn'>Apply Now</button>
       </div>
     )
   }

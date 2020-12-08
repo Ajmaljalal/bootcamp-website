@@ -1,12 +1,8 @@
 .syllabus-w {
-  height: 92vh;
-  background-image: url('../assets/landing-page-image1.png');
-  background-size: 700px 700px;
-  background-position: 87% 60%;
-  background-repeat: no-repeat;
+  height: 94vh;
   display: flex;
   align-items: center;
-  padding: 0 80px;
-  background-color: rgb(226, 235, 247);
+  padding: 0 200px;
+  background-color: var(--secondary);
   overflow-x: hidden;
 }

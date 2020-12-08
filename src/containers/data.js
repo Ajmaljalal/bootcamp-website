@@ -1,10 +1,10 @@
 
-import Project1 from '../assets/project-1.PNG'
-import Project2 from '../assets/project-2.PNG'
-import Project3 from '../assets/project-3.PNG'
-import Project4 from '../assets/project-4.PNG'
-import Project5 from '../assets/project-5.PNG'
-import Project6 from '../assets/project-6.PNG'
+import Project1 from '../assets/projects/messages.svg'
+import Project2 from '../assets/projects/cubics.svg'
+import Project3 from '../assets/projects/game.svg'
+import Project4 from '../assets/projects/calculator.svg'
+import Project5 from '../assets/projects/dashboard.svg'
+import Project6 from '../assets/projects/social.svg'
 export const projects = [
     {
         image: Project1,

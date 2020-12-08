@@ -1,78 +1,26 @@
 
 .register-w {
+  height: 94vh;
   background-image: url("../assets/Frameregister.svg");
   background-size: 400px 400px;
-  background-position: 95% 60%;
+  background-position: 80% 40%;
   background-repeat: no-repeat;
-  height: 94vh;
   display: flex;
   align-items: center;
-  padding: 0 80px;
-  background-color: #fbfeff;
+  padding: 0 200px;
+  background-color: var(--secondary);
   overflow-x: hidden;
-  font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 26px;
-}
-
-.blue-circle-1 {
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 947px;
-  top: 204px;
-}
-
-.orange-circle-1 {
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 1349px;
-  top: 185px;
-}
-
-.red-circle-1 {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  left: 1607px;
-  top: 421px;
-}
-
-.blue-circle-2 {
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 966px;
-  top: 739px;
-}
-
-.register-page-image {
-  position: absolute;
-  width: 479px;
-  height: 393px;
-  left: 1106px;
-  top: 269px;
 }
 
 .form-container {
   width: 50%;
-  height: 80%;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  width: 270px;
-  height: 52px;
-  left: 335px;
-  top: 280px;
-  /* margin-left: 60px; */
 }
 
 .input-row {
   display: flex;
-  padding-bottom: 15px;
 }
 
 .input-row-1 {
@@ -160,11 +108,9 @@ input::placeholder {
   color: #fff;
   cursor: pointer;
   transition: 0.15s background ease-in;
-  position: absolute;
   width: 130px;
   height: 44px;
-  top: 408px;
-  background: #6d6afe;
+  background: var(--primary);
   box-shadow: 0px 8px 27px rgba(109, 106, 254, 0.3);
   border-radius: 4px;
 }
