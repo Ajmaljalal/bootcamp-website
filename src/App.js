@@ -48,65 +48,72 @@ class App extends React.Component {
     const { currentScreen } = this.state;
     return (
       <div className="container">
-        <div className="header">
-          <div
-            className="header__logo"
-            onClick={() => this.setCurrentScreen("feature")}
-          >
-            CodeExpert
-          </div>
-          <div className="header__btns">
-            <div
-              className="header__btns__btn"
-              onClick={() => this.setCurrentScreen("projects")}
-              style={{
-                border:
-                  currentScreen === "projects"
-                    ? "1px solid #6D6AFE"
-                    : "1px solid transparent",
-              }}
-            >
-              Projects
-            </div>
-            <div
-              className="header__btns__btn"
-              onClick={() => this.setCurrentScreen("syllabus")}
-              style={{
-                border:
-                  currentScreen === "syllabus"
-                    ? "1px solid #6D6AFE"
-                    : "1px solid transparent",
-              }}
-            >
-              Syllabus
-            </div>
-            <div
-              className="header__btns__btn"
-              onClick={() => this.setCurrentScreen("pricing")}
-              style={{
-                border:
-                  currentScreen === "pricing"
-                    ? "1px solid #6D6AFE"
-                    : "1px solid transparent",
-              }}
-            >
-              Pricing
-            </div>
-            <div
-              className="header__btns__btn header__btns__btn--bg"
-              onClick={() => this.setCurrentScreen("register")}
-            >
-              Register
-            </div>
-          </div>
-        </div>
+        {this.renderHeaderNav()}
         <AnimateOnChange animation="fade" className="full-width">
           {this.renderCurrentScreen()}
         </AnimateOnChange>
-        {this.state.currentScreen === "feature" ? <More /> : null}
+        {currentScreen === "feature" ? <More /> : null}
         <Footer />
       </div>
     );
+  }
+
+  renderHeaderNav = () => {
+    const { currentScreen } = this.state;
+    return (
+      <div className="header">
+        <div
+          className="header__logo"
+          onClick={() => this.setCurrentScreen("feature")}
+        >
+          codXpert
+          </div>
+        <div className="header__btns">
+          <div
+            className="header__btns__btn"
+            onClick={() => this.setCurrentScreen("projects")}
+            style={{
+              color:
+                currentScreen === "projects"
+                  ? "#6D6AFE"
+                  : "black",
+            }}
+          >
+            Projects
+            </div>
+          <div
+            className="header__btns__btn"
+            onClick={() => this.setCurrentScreen("syllabus")}
+            style={{
+              color:
+                currentScreen === "syllabus"
+                  ? "#6D6AFE"
+                  : "black",
+            }}
+          >
+            Syllabus
+            </div>
+          <div
+            className="header__btns__btn"
+            onClick={() => this.setCurrentScreen("pricing")}
+            style={{
+              color:
+                currentScreen === "pricing"
+                  ? "#6D6AFE"
+                  : "black",
+            }}
+          >
+            Pricing
+            </div>
+          <div
+            className="header__btns__btn header__btns__btn--bg"
+            onClick={() => this.setCurrentScreen("register")}
+          >
+            Register
+            </div>
+        </div>
+      </div>
+    )
   }
 }
 export default App;

@@ -1,29 +1,29 @@
 import React, { Component } from 'react'
-import fullPayment from '../assets/full.png'
-import monthlyPayment from '../assets/monthly.png'
+import fullPayment from '../assets/gold.svg'
+import monthlyPayment from '../assets/silver.svg'
 
 export default class Pricing extends Component {
   render() {
     return (
       <div className='pricing-w'>
         <div className='pricing__text'>
-          <h1 className='pricing__text__header'>It's just<span>$4,000</span></h1>
-          <p className='pricing__text__desc'>You can choose to pay the whole amount up front or pay it in installments.</p>
+          <h1 className='pricing__text__header'>It's just $5,000 for the whole 6 months</h1>
+          <p className='pricing__text__desc'>You can choose to pay the whole amount upfront or pay it in installments.</p>
         </div>
         <div className='pricing__boxes-w'>
-          <div className='pricing__box pricing__box--monthly'>
-            <h3 className='pricing__box__header'>SILVER</h3>
-            <div className='pricing__box__total'>$1,000</div>
-            <p className='pricing__box__total-text'>PER MONTH</p>
+          <div className='pricing__box'>
+            <div className='pricing__box__header'><h3>SILVER</h3></div>
             <img src={monthlyPayment} className='pricing__box__img' alt='full-payment' />
-            <button className='pricing__box__btn'>APPLY NOW</button>
+            <div className='pricing__box__total'>$833.3</div>
+            <p className='pricing__box__total-text'>PER MONTH</p>
+            <button className='pricing__box__btn'>Apply Now</button>
           </div>
-          <div className='pricing__box pricing__box--upfront'>
-            <h3 className='pricing__box__header'>GOLDEN</h3>
-            <div className='pricing__box__total'>$4,000</div>
-            <p className='pricing__box__total-text'>IN FULL</p>
+          <div className='pricing__box'>
+            <div className='pricing__box__header'><h3>GOLDEN</h3></div>
             <img src={fullPayment} className='pricing__box__img' alt='full-payment' />
-            <button className='pricing__box__btn pricing__box__btn--outlined'>APPLY NOW</button>
+            <div className='pricing__box__total'>$5,000</div>
+            <p className='pricing__box__total-text'>IN FULL</p>
+            <button className='pricing__box__btn'>Apply Now</button>
           </div>
         </div>
       </div>
