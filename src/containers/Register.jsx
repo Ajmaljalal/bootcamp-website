@@ -8,7 +8,7 @@ export default class Register extends Component {
   render() {
     return (
       <div className="register-w">
-        <div className="blue-circle-1">
+        {/* <div className="blue-circle-1">
           <img src={blueCircle} alt="" />
         </div>
         <div className="orange-circle-1">
@@ -19,7 +19,7 @@ export default class Register extends Component {
         </div>
         <div className="blue-circle-2">
           <img src={blueCircle} alt="" />
-        </div>
+        </div> */}
         <form action="submit" className="form-container">
           <div className="input-row">
             <div className="input-container">
@@ -109,11 +109,6 @@ export default class Register extends Component {
             Submit
           </button>
         </form>
-        <img
-          src={Registerimage}
-          alt="Register Table"
-          className="register-page-image"
-        />
       </div>
     );
   }
