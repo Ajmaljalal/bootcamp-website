@@ -4,6 +4,9 @@ import pinkEllipse from '../assets/ellipse-pink.svg'
 import redDot from '../assets/dot-red.svg'
 import cyanEllips from '../assets/ellipse-cyan.svg'
 import whyCodeExperImage from '../assets/why.svg'
+import technologiesIcon from '../assets/technologies.svg'
+import toolsIcon from '../assets/tools.svg'
+import titlesIcon from '../assets/titles.svg'
 
 export default class More extends Component {
   render() {
@@ -58,7 +61,10 @@ export default class More extends Component {
         <h2>There are tons of skills and opportunities with CodeExpert!</h2>
         <div className='info__cards'>
           <div className='info__card'>
-            <h3>Technologies you will learn</h3>
+            <div className='card__header'>
+              <img src={technologiesIcon} alt='technologiesicon' />
+              <h3>Technologies you will learn</h3>
+            </div>
             <ul>
               <li>HTML5</li>
               <li>CSS3</li>
@@ -70,7 +76,10 @@ export default class More extends Component {
             </ul>
           </div>
           <div className='info__card'>
-            <h3>Tools you will learn</h3>
+            <div className='card__header'>
+              <img src={toolsIcon} alt='technologiesicon' />
+              <h3>Tools you will learn</h3>
+            </div>
             <ul>
               <li>Git/Github</li>
               <li>Terminal</li>
@@ -79,7 +88,10 @@ export default class More extends Component {
             </ul>
           </div>
           <div className='info__card'>
-            <h3>Titles you will gain</h3>
+            <div className='card__header'>
+              <img src={titlesIcon} alt='technologiesicon' />
+              <h3>Titles you will gain</h3>
+            </div>
             <ul>
               <li>Front End Developer</li>
               <li>Back End Developer</li>

@@ -121,6 +121,14 @@
   margin-right: 30px;
 }
 
+.card__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid #E6F0FF;
+}
+
 @media screen and (max-width: 1124px) {
   .info__what {
     padding: 80px 100px
@@ -132,5 +140,16 @@
 
   .why__desc {
     margin-left: 30px;
+  }
+
+  .info__cards-w{
+    width: 100%;
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: var(--white);
   }
 }

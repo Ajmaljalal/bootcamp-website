@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { projects } from './data'
-import listIcon from '../assets/list.png'
-import gridIcon from '../assets/grid.png'
+import listIcon from '../assets/list.svg'
+import gridIcon from '../assets/grid.svg'
 
 export default class Projects extends Component {
 
@@ -22,8 +22,13 @@ export default class Projects extends Component {
       .map((project, index) => {
         return (
           <div className='projects__list-item' key={index}>
-            <div className='list-item__screenshot'>
-              <img src={project.image} alt='project-screenshot' />
+            <div className='list-item__tags'>
+              <div className='tags-item tags-item--blue'>{project.cohort}</div>
+              <div className='tags-item tags-item--purple'>{project.level}</div>
+              <div className='tags-item tags-item--red'>{project.option}</div>
+            </div>
+            <div className='list-item__icon'>
+              <img src={project.image} alt='project-icon' />
             </div>
             <div className='list-item__desc'>
               <div className='list-item__title'>
@@ -31,11 +36,6 @@ export default class Projects extends Component {
               </div>
               <div className='list-item__desc-text'>
                 {project.desc}
-              </div>
-              <div className='list-item__tags'>
-                <div className='tags-item tags-item--green'>{project.cohort}</div>
-                <div className='tags-item tags-item--orange'>{project.level}</div>
-                <div className='tags-item tags-item--red'>{project.option}</div>
               </div>
               <div className='list-item__preview'><p>Preview project</p></div>
             </div>
