@@ -54,7 +54,7 @@ class App extends React.Component {
           {this.renderCurrentScreen()}
         </AnimateOnChange>
         {currentScreen === "feature" ? <More onScreenChange={this.setCurrentScreen} /> : null}
-        <Footer />
+        <Footer currentScreen={this.state.currentScreen} setCurrentScreen={this.setCurrentScreen} />
       </div>
     );
   }

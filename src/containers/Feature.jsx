@@ -33,7 +33,7 @@ export default class Feature extends Component {
         <Button currentScreen={'register'} screenName='register' onClick={this.setScreen} bgRequired={true} />
         <div
           onClick={() => document.getElementById('#more').scrollIntoView(
-          { behavior: "smooth" }
+            { behavior: "smooth" }
           )}
           className='feature__text__btn feature__text__btn--outlined'>
           Learn More
@@ -60,7 +60,7 @@ export default class Feature extends Component {
             <img src={supportIcon} alt='instructor' />
           </div>
           <div className='perks__card__text'>
-            Student Support & Guidelines
+            Real world projects
             </div>
         </div>
         <div className='feature__perks__card'>
@@ -70,7 +70,7 @@ export default class Feature extends Component {
           </div>
           <div className='perks__card__text'>
             Job Interview Preparation
-            </div>
+          </div>
         </div>
       </div>
     )
