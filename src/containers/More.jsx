@@ -3,7 +3,7 @@ import DesignSpots from './helpers/designSpots';
 import pinkEllipse from '../assets/ellipse-pink.svg'
 import redDot from '../assets/dot-red.svg'
 import cyanEllips from '../assets/ellipse-cyan.svg'
-import whyCodeExperImage from '../assets/why.svg'
+import whyCodeExpertImage from '../assets/why.svg'
 import technologiesIcon from '../assets/technologies.svg'
 import toolsIcon from '../assets/tools.svg'
 import titlesIcon from '../assets/titles.svg'
@@ -40,7 +40,7 @@ export default class More extends Component {
     const { onScreenChange } = this.props
     return (
       <div className='info__why'>
-        <img src={whyCodeExperImage} alt='whyCodxperticon' />
+        <img src={whyCodeExpertImage} alt='whyCodxperticon' />
         <div className='why__desc'>
           <h2>Why Codxpert?</h2>
           <p>Our program is carefully designed to respond to the dynamic needs of the web development job market. At the end of the training, you will have gained the necessary skills to enter the market and secure a job.</p>

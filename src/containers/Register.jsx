@@ -1,14 +1,17 @@
-import React, { Component } from "react";
-import DesignSpots from './helpers/designSpots';
+import React, { Component } from "react"
+import DesignSpots from './helpers/designSpots'
 import blueEllipse from '../assets/ellipse-bluet.svg'
 import purpleDot from '../assets/dot-purple.svg'
 import redEllips from '../assets/ellipse-pink.svg'
+import registerImage from '../assets/why.svg'
 
 export default class Register extends Component {
   render() {
     return (
       <div className="register-w">
+        <img className='register__illustration' src={registerImage} alt='registration illustration' />
         <form className="form-container">
+          <h3>Jump on learning new coding skills now</h3>
           <div className="input-row">
             <div className="input-container">
               <input
