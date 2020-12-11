@@ -1,8 +1,8 @@
 .feature {
   height: 83vh;
   background-image: url("../assets/landing-page-image.svg");
-  background-size: 500px 500px;
-  background-position: 88% 60%;
+  background-size: 400px 400px;
+  background-position: 85% 60%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -39,9 +39,7 @@
   outline: none;
   background:  var(--primary);
   color: var(--white);
-  font-size: 16px;
   cursor: pointer;
-  margin-right: 30px;
   width: 140px;
   height: 48px;
   border-radius: 5px;
@@ -57,18 +55,21 @@
   border: 1px solid #6D6AFE;
   color:  var(--black);
   background-color: transparent;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 15px;
   box-shadow: none;
+  width: 110px;
+  height: 40px;
+  margin-left: 30px;
+  box-sizing: border-box;
 }
 
 
 .feature__perks-w {
   width: 70%;
-  min-width: 900px;
+  min-width: 750px;
   position: absolute;
   left: 50%;
-  bottom: -75px;
+  bottom: -65px;
   transform: translate(-50%);
   height: 126px;
   z-index: 1000;
@@ -77,8 +78,8 @@
 }
 
 .feature__perks__card {
-  width: 250px;
-  height: 110px;
+  width: 230px;
+  height: 90px;
   background: var(--white);
   box-shadow: 0px 6px 60px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
@@ -87,19 +88,19 @@
 }
 
 .feature__perks__card:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 .perks__card__right-border{
-  width: 5px;
-  height: 46px;
+  width: 4px;
+  height: 43px;
   background: var(--primary);
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .perks__card__icon{
-  width: 83px;
-  height: 72px;
+  width: 70px;
+  height: 62px;
   background: var(--primary_light);
   display: flex;
   justify-content: center;
@@ -113,7 +114,6 @@
 
 .perks__card__text{
   margin-left: 20px;
-  font-weight: 500;
   font-size: 14px;
   text-align: center;
   width: 100px;

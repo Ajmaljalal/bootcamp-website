@@ -1,26 +1,14 @@
 import React, { Component } from "react";
-import Registerimage from "../assets/Frameregister.svg";
-import blueCircle from "../assets/bluecircle.svg";
-import orangeCircle from "../assets/orangecircle.svg";
-import redCircle from "../assets/redcircle.svg";
+import DesignSpots from './helpers/designSpots';
+import blueEllipse from '../assets/ellipse-bluet.svg'
+import purpleDot from '../assets/dot-purple.svg'
+import redEllips from '../assets/ellipse-pink.svg'
 
 export default class Register extends Component {
   render() {
     return (
       <div className="register-w">
-        {/* <div className="blue-circle-1">
-          <img src={blueCircle} alt="" />
-        </div>
-        <div className="orange-circle-1">
-          <img src={orangeCircle} alt="" />
-        </div>
-        <div className="red-circle-1">
-          <img src={redCircle} alt="" />
-        </div>
-        <div className="blue-circle-2">
-          <img src={blueCircle} alt="" />
-        </div> */}
-        <form action="submit" className="form-container">
+        <form action="submit" data-netlify="true" className="form-container">
           <div className="input-row">
             <div className="input-container">
               <input
@@ -109,6 +97,9 @@ export default class Register extends Component {
             Submit
           </button>
         </form>
+        {DesignSpots(purpleDot, 40, 15)}
+        {DesignSpots(redEllips, 86, 40)}
+        {DesignSpots(blueEllipse, 50, 80)}
       </div>
     );
   }

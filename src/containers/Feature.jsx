@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import DesignSpots from './helpers/designSpots';
+import Button from './helpers/Button';
 import instructorIcon from '../assets/instructor.svg'
 import supportIcon from '../assets/suport.svg'
 import interviewIcon from '../assets/interview.svg'
@@ -29,14 +30,14 @@ export default class Feature extends Component {
       <div className='feature__text'>
         <h1 className='feature__text__header'>Become a <span>web developer</span> by building real world projects</h1>
         <p className='feature__text__desc'>With CodeExpert, by building dozens of real world projects with enterprise level professionals, programing makes much more sense</p>
-        <button className='feature__text__btn' onClick={() => this.setScreen('register')}>Apply Now</button>
-        <button
+        <Button currentScreen={'register'} screenName='register' onClick={this.setScreen} bgRequired={true} />
+        <div
           onClick={() => document.getElementById('#more').scrollIntoView(
           { behavior: "smooth" }
           )}
           className='feature__text__btn feature__text__btn--outlined'>
           Learn More
-        </button>
+        </div>
       </div>
     )
   }

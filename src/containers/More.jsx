@@ -7,6 +7,7 @@ import whyCodeExperImage from '../assets/why.svg'
 import technologiesIcon from '../assets/technologies.svg'
 import toolsIcon from '../assets/tools.svg'
 import titlesIcon from '../assets/titles.svg'
+import Button from './helpers/Button';
 
 export default class More extends Component {
   render() {
@@ -36,6 +37,7 @@ export default class More extends Component {
   }
 
   renderWhy = () => {
+    const { onScreenChange } = this.props
     return (
       <div className='info__why'>
         <img src={whyCodeExperImage} alt='whycodeexperticon' />
@@ -49,13 +51,14 @@ export default class More extends Component {
             <li>Up to Date Training Materials</li>
             <li>Resume and Job Interview Preparation</li>
           </ul>
-          <button className='feature__text__btn'>Apply Now</button>
+          <Button currentScreen={'feature'} screenName='register' onClick={() => onScreenChange('register')} bgRequired={true} />
         </div>
       </div>
     )
   }
 
   renderInfoCards = () => {
+    const { onScreenChange } = this.props
     return (
       <div className='info__cards-w'>
         <h2>There are tons of skills and opportunities with CodeExpert!</h2>
@@ -102,7 +105,7 @@ export default class More extends Component {
           </div>
         </div>
         <h2>Ready to become a web developer?</h2>
-        <button className='feature__text__btn'>Apply Now</button>
+        <Button currentScreen={'feature'} screenName='register' onClick={() => onScreenChange('register')} bgRequired={true} />
       </div>
     )
   }
