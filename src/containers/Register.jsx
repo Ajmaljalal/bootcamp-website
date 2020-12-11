@@ -39,7 +39,7 @@ export default class Register extends Component {
             <div className="input-container">
               <input
                 className="input-field input-row-2"
-                type="text"
+                type="pnone"
                 placeholder="Phone Number"
                 required
               />
@@ -51,7 +51,6 @@ export default class Register extends Component {
                 className="input-field-address input-row-3"
                 type="text"
                 placeholder="Address"
-                required
               />
             </div>
           </div>
@@ -78,18 +77,15 @@ export default class Register extends Component {
                   className="input-field-zip_code"
                   type="text"
                   placeholder="Zip Code"
-                  required
                 />
               </div>
             </div>
           </div>
           <div className="input-row">
             <div className="input-container">
-              <input
+              <textarea
                 className="input-field-occupation"
-                type="text"
                 placeholder="Previous or Current Occupation"
-                required
               />
             </div>
           </div>

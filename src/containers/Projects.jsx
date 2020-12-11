@@ -37,7 +37,7 @@ export default class Projects extends Component {
               <div className='list-item__desc-text'>
                 {project.desc}
               </div>
-              <div className='list-item__preview'><p>Preview project</p></div>
+              <div className='list-item__preview'><a href={project.link} target='blank'>Preview project</a></div>
             </div>
           </div>
         )
@@ -55,8 +55,8 @@ export default class Projects extends Component {
             <div className={projects === 'node' ? 'projects__header__btn projects__header__btn--border-bottom' : 'projects__header__btn'} onClick={() => this.setCurrentProjectsTab('node')}>Node, Express & Databases</div>
           </div>
           <div className='projects__view-icons'>
-            <img src={listIcon} alt='list view'/>
-            <img src={gridIcon} alt='grid view'/>
+            <img src={listIcon} alt='list view' />
+            <img src={gridIcon} alt='grid view' />
           </div>
         </div>
         <div className='projects__list'>

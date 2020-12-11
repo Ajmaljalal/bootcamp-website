@@ -8,10 +8,11 @@ import Project6 from '../assets/projects/social.svg'
 export const projects = [
     {
         image: Project1,
-        title: 'Messages',
+        title: 'Emaily',
         desc: 'This is a UI build with css and html for begginers. We will make a message UI using html and css',
         cohort: 'html',
         level: 'Beginner',
+        link: 'https://www.figma.com/proto/2RL0vK3HXBmdr8cYL25Os3/3-Outlook_E-mail?node-id=1%3A3&scaling=contain',
         option: 'Required'
     },
     {
@@ -20,6 +21,7 @@ export const projects = [
         desc: 'This is a UI build with css and html for Beginners. We will be making a profile UI for Daria to chat with her freinds',
         cohort: 'html',
         level: 'Beginner',
+        link: 'https://cdn.dribbble.com/users/106896/screenshots/2359402/attachments/452125/dailyui004_2x_-_2.png',
         option: 'Required'
     },
     {
@@ -28,6 +30,7 @@ export const projects = [
         desc: 'This is a UI build with css and html for Beginners. This is a showcase of all the projects that a person will be building',
         cohort: 'html',
         level: 'Beginner',
+        link: 'https://cdn.dribbble.com/users/106896/screenshots/2359402/attachments/452125/dailyui004_2x_-_2.png',
         option: 'Elective'
     },
     {
@@ -36,6 +39,7 @@ export const projects = [
         desc: 'This is a UI build with css and html for Beginners. For real people and with real experience that wants to build more experience This one is a medium level project with css and html for those who finishe the first one',
         cohort: 'html',
         level: 'Medium',
+        link: 'https://cdn.dribbble.com/users/106896/screenshots/2359402/attachments/452125/dailyui004_2x_-_2.png',
         option: 'Required'
     },
     {
@@ -44,6 +48,7 @@ export const projects = [
         desc: 'This is a UI build with css and html for Beginners. Here we will be making real engines that is use for displaying real data',
         cohort: 'html',
         level: 'Advance',
+        link: 'https://www.figma.com/proto/A14VWgJi98bulvNDagLdAO/3-Food-Delivery-Dashboard-main-file?node-id=1%3A2&scaling=max-zoom',
         option: 'Required'
     },
     {
@@ -52,6 +57,7 @@ export const projects = [
         desc: 'This is a UI build with css and html for Beginners. This is a black mode css and html web project for advance users',
         cohort: 'html',
         level: 'Advance',
+        link: 'https://cdn.dribbble.com/users/106896/screenshots/2359402/attachments/452125/dailyui004_2x_-_2.png',
         option: 'Required'
     },
     {
@@ -60,6 +66,7 @@ export const projects = [
         desc: 'This is a UI build with css and html for Beginners. This is a black mode css and html web project for advance users',
         cohort: 'javascript',
         level: 'Advance',
+        link: 'https://cdn.dribbble.com/users/106896/screenshots/2359402/attachments/452125/dailyui004_2x_-_2.png',
         option: 'Required'
     },
     {
@@ -68,6 +75,7 @@ export const projects = [
         desc: 'This is a UI build with css and html for Beginners. Here we will be making real engines that is use for displaying real data',
         cohort: 'javascript',
         level: 'Advance',
+        link: 'https://cdn.dribbble.com/users/106896/screenshots/2359402/attachments/452125/dailyui004_2x_-_2.png',
         option: 'Required'
     },
     {
@@ -76,6 +84,7 @@ export const projects = [
         desc: 'This is a UI build with css and html for Beginners. For real people and with real experience that wants to build more experience This one is a medium level project with css and html for those who finishe the first one',
         cohort: 'javascript',
         level: 'Medium',
+        link: 'https://cdn.dribbble.com/users/106896/screenshots/2359402/attachments/452125/dailyui004_2x_-_2.png',
         option: 'Required'
     },
     {
@@ -84,6 +93,7 @@ export const projects = [
         desc: 'This is a UI build with css and html for begginers. We will make a message UI using html and css',
         cohort: 'node',
         level: 'Beginner',
+        link: 'https://cdn.dribbble.com/users/106896/screenshots/2359402/attachments/452125/dailyui004_2x_-_2.png',
         option: 'Required'
     },
     {
@@ -92,6 +102,7 @@ export const projects = [
         desc: 'This is a UI build with css and node for Beginners. We will be making a profile UI for Daria to chat with her freinds',
         cohort: 'node',
         level: 'Beginner',
+        link: 'https://cdn.dribbble.com/users/106896/screenshots/2359402/attachments/452125/dailyui004_2x_-_2.png',
         option: 'Required'
     },
     {
@@ -100,6 +111,7 @@ export const projects = [
         desc: 'This is a UI build with css and node for Beginners. This is a showcase of all the projects that a person will be building',
         cohort: 'node',
         level: 'Beginner',
+        link: 'https://cdn.dribbble.com/users/106896/screenshots/2359402/attachments/452125/dailyui004_2x_-_2.png',
         option: 'Elective'
     },
     {
@@ -108,6 +120,7 @@ export const projects = [
         desc: 'This is a UI build with css and html for Beginners. This is a showcase of all the projects that a person will be building',
         cohort: 'react',
         level: 'Beginner',
+        link: 'https://cdn.dribbble.com/users/106896/screenshots/2359402/attachments/452125/dailyui004_2x_-_2.png',
         option: 'Elective'
     },
     {
@@ -116,6 +129,7 @@ export const projects = [
         desc: 'This is a UI build with css and react for Beginners. This is a black mode css and react web project for advance users',
         cohort: 'react',
         level: 'Advance',
+        link: 'https://cdn.dribbble.com/users/106896/screenshots/2359402/attachments/452125/dailyui004_2x_-_2.png',
         option: 'Required'
     },
     {
@@ -124,6 +138,7 @@ export const projects = [
         desc: 'This is a UI build with css and react for Beginners. Here we will be making real engines that is use for displaying real data',
         cohort: 'react',
         level: 'Advance',
+        link: 'https://cdn.dribbble.com/users/106896/screenshots/2359402/attachments/452125/dailyui004_2x_-_2.png',
         option: 'Required'
     },
 ]
