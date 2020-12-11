@@ -1,79 +1,83 @@
+
 .register-w {
   height: 94vh;
-  background-image: url("../assets/register-page-image1.png");
-  background-size: 1100px 700px;
-  background-position: 140% 60%;
+  background-image: url("../assets/Frameregister.svg");
+  background-size: 400px 400px;
+  background-position: 83% 40%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  padding: 0 80px;
-  background-color: rgb(226, 235, 247);
+  padding: 0 200px;
+  background-color: var(--secondary);
   overflow-x: hidden;
+  font-style: normal;
+  position: relative;
 }
 
 .form-container {
-  width: 50%;
-  height: 80%;
   display: flex;
   flex-direction: column;
-  /* margin-left: 60px; */
-}
-
-.explanation {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 25px;
-  margin-left: 15px;
-}
-
-.explain-paragraph {
-  margin: 0;
 }
 
 .input-row {
   display: flex;
-  padding-bottom: 15px;
+  margin-bottom: 22px;
 }
+
 
 .input-container {
   display: flex;
   flex-direction: column;
-  padding-left: 15px;
+}
+
+.input-left {
+  margin-right: 30px;
+}
+
+.input-field-city,
+.input-field-state,
+.input-field-zip_code {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
+  padding: 0 10px;
+  transition: box-shadow 0.25s cubic-bezier(1, 1, 0.21, 0.21);
+  min-height: 52px;
+  background-color: #fff;
+  outline: none;
+  border: none;
 }
 
 .input-field,
 .input-field-address,
-.input-field-occupation,
-.input-field-city,
-.input-field-state,
-.input-field-zip_code {
+.input-field-occupation {
   outline: none;
   border: none;
-  min-height: 43px;
-  min-width: 310px;
-  border-radius: 0.25rem;
+  min-height: 52px;
+  width: 270px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
   padding: 0 10px;
-  font-size: 16px;
   transition: box-shadow 0.25s cubic-bezier(1, 1, 0.21, 0.21);
 }
 
-.input-container input::placeholder{
-  font-size: 14px;
+.input-container input::placeholder {
+  color: #374e70;
+  font-size: 15px;
 }
 
 .input-field-address,
 .input-field-occupation {
-  min-width: 658px;
+  min-width: 590px;
 }
 
 .input-field-city,
 .input-field-state,
 .input-field-zip_code {
-  min-width: 195px;
+  width: 163px;
 }
 
 input:focus {
-  box-shadow: 0 0 1pt 1pt #112f9f;
+  box-shadow: 0 0 1pt 1pt #6d6afe;
 }
 
 input::placeholder {
@@ -81,22 +85,37 @@ input::placeholder {
 }
 
 .submit {
-  background: #0c79cc;
   border: none;
-  width: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 43px;
-  margin-left: 15px;
-  margin-bottom: 15px;
-  border-radius: 0.25rem;
   font-size: 14px;
   color: #fff;
   cursor: pointer;
   transition: 0.15s background ease-in;
+  width: 130px;
+  height: 44px;
+  background: var(--primary);
+  box-shadow: 0px 8px 27px rgba(109, 106, 254, 0.3);
+  border-radius: 4px;
 }
 
-.submit:hover {
-  background-color: #0d74c2;
+@media screen and (max-width: 1124px) {
+  .register-w {
+    background-image: none;
+    padding:  0 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .register-w {
+    padding:  0 350px;
+  }
 }

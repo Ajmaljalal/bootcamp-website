@@ -1,21 +1,18 @@
 import React, { Component } from "react";
+import DesignSpots from './helpers/designSpots';
+import blueEllipse from '../assets/ellipse-bluet.svg'
+import purpleDot from '../assets/dot-purple.svg'
+import redEllips from '../assets/ellipse-pink.svg'
 
 export default class Register extends Component {
   render() {
     return (
       <div className="register-w">
-        <form action="submit" className="form-container">
-          <div className="explanation">
-            <h1>Register Now</h1>
-            <p className="explain-paragraph">
-              Please fill out the form below and our team will review it and
-              reply back to you via email.
-            </p>
-          </div>
+        <form data-netlify="true" className="form-container">
           <div className="input-row">
             <div className="input-container">
               <input
-                className="input-field"
+                className="input-field input-left input-row-1"
                 type="text"
                 placeholder="First Name"
                 required
@@ -23,7 +20,7 @@ export default class Register extends Component {
             </div>
             <div className="input-container">
               <input
-                className="input-field"
+                className="input-field input-row-1"
                 type="text"
                 placeholder="Last Name"
                 required
@@ -33,7 +30,7 @@ export default class Register extends Component {
           <div className="input-row">
             <div className="input-container">
               <input
-                className="input-field"
+                className="input-field input-left input-row-2"
                 type="email"
                 placeholder="Email"
                 required
@@ -41,7 +38,7 @@ export default class Register extends Component {
             </div>
             <div className="input-container">
               <input
-                className="input-field"
+                className="input-field input-row-2"
                 type="text"
                 placeholder="Phone Number"
                 required
@@ -51,7 +48,7 @@ export default class Register extends Component {
           <div className="input-row">
             <div className="input-container">
               <input
-                className="input-field-address"
+                className="input-field-address input-row-3"
                 type="text"
                 placeholder="Address"
                 required
@@ -61,7 +58,7 @@ export default class Register extends Component {
           <div className="input-row">
             <div className="input-container">
               <input
-                className="input-field-city"
+                className="input-field-city input-left input-row-4"
                 type="text"
                 placeholder="City"
                 required
@@ -69,7 +66,7 @@ export default class Register extends Component {
             </div>
             <div className="input-container">
               <input
-                className="input-field-state"
+                className="input-field-state input-left"
                 type="text"
                 placeholder="State"
                 required
@@ -100,6 +97,9 @@ export default class Register extends Component {
             Submit
           </button>
         </form>
+        {DesignSpots(purpleDot, 40, 15)}
+        {DesignSpots(redEllips, 86, 40)}
+        {DesignSpots(blueEllipse, 50, 80)}
       </div>
     );
   }

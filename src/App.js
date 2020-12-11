@@ -1,6 +1,7 @@
 import React from "react";
 import { AnimateOnChange } from "react-animation";
 import "./App.css";
+import Button from './containers/helpers/Button';
 import Feature from "./containers/Feature";
 import Projects from "./containers/Projects";
 import Syllabus from "./containers/Syllabus";
@@ -34,14 +35,14 @@ class App extends React.Component {
         return <Feature screenChangerFunc={this.setCurrentScreen} />;
       case "projects":
         return <Projects />;
-      case "syllabus":
+      case "curriculum":
         return <Syllabus />;
       case "pricing":
         return <Pricing />;
       case "register":
         return <Register />;
       default:
-        return <Feature />;
+        return <Feature screenChangerFunc={this.setCurrentScreen} />;
     }
   };
   render() {
@@ -52,7 +53,7 @@ class App extends React.Component {
         <AnimateOnChange animation="fade" className="full-width">
           {this.renderCurrentScreen()}
         </AnimateOnChange>
-        {currentScreen === "feature" ? <More /> : null}
+        {currentScreen === "feature" ? <More onScreenChange={this.setCurrentScreen} /> : null}
         <Footer />
       </div>
     );
@@ -69,48 +70,10 @@ class App extends React.Component {
           codXpert
           </div>
         <div className="header__btns">
-          <div
-            className="header__btns__btn"
-            onClick={() => this.setCurrentScreen("projects")}
-            style={{
-              color:
-                currentScreen === "projects"
-                  ? "#6D6AFE"
-                  : "black",
-            }}
-          >
-            Projects
-            </div>
-          <div
-            className="header__btns__btn"
-            onClick={() => this.setCurrentScreen("syllabus")}
-            style={{
-              color:
-                currentScreen === "syllabus"
-                  ? "#6D6AFE"
-                  : "black",
-            }}
-          >
-            Curriculum
-            </div>
-          <div
-            className="header__btns__btn"
-            onClick={() => this.setCurrentScreen("pricing")}
-            style={{
-              color:
-                currentScreen === "pricing"
-                  ? "#6D6AFE"
-                  : "black",
-            }}
-          >
-            Pricing
-            </div>
-          <div
-            className="header__btns__btn header__btns__btn--bg"
-            onClick={() => this.setCurrentScreen("register")}
-          >
-            Apply Now
-            </div>
+          <Button currentScreen={currentScreen} screenName='projects' onClick={this.setCurrentScreen} />
+          <Button currentScreen={currentScreen} screenName='curriculum' onClick={this.setCurrentScreen} />
+          <Button currentScreen={currentScreen} screenName='pricing' onClick={this.setCurrentScreen} />
+          <Button currentScreen={currentScreen} screenName='register' onClick={this.setCurrentScreen} bgRequired={true} />
         </div>
       </div>
     )
