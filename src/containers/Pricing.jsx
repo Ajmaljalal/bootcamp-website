@@ -4,6 +4,7 @@ import monthlyPayment from '../assets/silver.svg'
 
 export default class Pricing extends Component {
   render() {
+    const { setCurrentScreen } = this.props
     return (
       <div className='pricing-w'>
         <div className='pricing__text'>
@@ -16,14 +17,14 @@ export default class Pricing extends Component {
             <img src={monthlyPayment} className='pricing__box__img' alt='full-payment' />
             <div className='pricing__box__total'>$833.3</div>
             <p className='pricing__box__total-text'>PER MONTH</p>
-            <button className='pricing__box__btn'>Apply Now</button>
+            <button className='pricing__box__btn' onClick={() => setCurrentScreen('register')}>Apply Now</button>
           </div>
           <div className='pricing__box'>
             <div className='pricing__box__header'><h3>GOLDEN</h3></div>
             <img src={fullPayment} className='pricing__box__img' alt='full-payment' />
             <div className='pricing__box__total'>$5,000</div>
             <p className='pricing__box__total-text'>IN FULL</p>
-            <button className='pricing__box__btn'>Apply Now</button>
+            <button className='pricing__box__btn' onClick={() => setCurrentScreen('register')}>Apply Now</button>
           </div>
         </div>
       </div>

@@ -38,7 +38,7 @@ class App extends React.Component {
       case "curriculum":
         return <Syllabus />;
       case "pricing":
-        return <Pricing />;
+        return <Pricing setCurrentScreen={this.setCurrentScreen}/>;
       case "register":
         return <Register />;
       default:
