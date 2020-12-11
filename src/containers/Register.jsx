@@ -8,7 +8,7 @@ export default class Register extends Component {
   render() {
     return (
       <div className="register-w">
-        <form data-netlify="true" name='registration' className="form-container">
+        <form className="form-container">
           <div className="input-row">
             <div className="input-container">
               <input
