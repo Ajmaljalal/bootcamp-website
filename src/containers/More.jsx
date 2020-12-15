@@ -24,10 +24,10 @@ export default class More extends Component {
     return (
       <div id='#more' className='info__what'>
         <div className='what__title'>
-          <h2>What is CodeExpert?</h2>
+          <h2>What is Codxpert?</h2>
         </div>
         <div className='what__desc'>
-          CodeExpert is a 6 months of projects building bootcamp that, unlike other bootcamps, focuses more on the implementation of skills in real world projects. We built our curriculum based on the experience of experts and the needs in the field. CodeExpert teaches the most essential skills and progarming languages to help students make real world web apps from scratch with minimun to no supervision.
+          Codxpert is a 6 months of projects building bootcamp that, unlike other bootcamps, focuses more on the implementation of skills in real world projects. We built our curriculum based on the experience of experts and the needs in the field. Codxpert teaches the most essential skills and progarming languages to help students make real world web apps from scratch with minimun to no supervision.
           </div>
         {DesignSpots(pinkEllipse, 80, 50)}
         {DesignSpots(redDot, 50, 90)}
@@ -40,9 +40,9 @@ export default class More extends Component {
     const { onScreenChange } = this.props
     return (
       <div className='info__why'>
-        <img src={whyCodeExperImage} alt='whycodeexperticon' />
+        <img src={whyCodeExperImage} alt='whyCodxperticon' />
         <div className='why__desc'>
-          <h2>Why CodeExpert?</h2>
+          <h2>Why Codxpert?</h2>
           <p>Our program is carefully designed to respond to the dynamic needs of the web development job market. At the end of the training, you will have gained the necessary skills to enter the market and secure a job.</p>
           <ul>
             <li>Experienced and Professional Instructors on hand</li>
@@ -61,7 +61,7 @@ export default class More extends Component {
     const { onScreenChange } = this.props
     return (
       <div className='info__cards-w'>
-        <h2>There are tons of skills and opportunities with CodeExpert!</h2>
+        <h2>There are tons of skills and opportunities with Codxpert!</h2>
         <div className='info__cards'>
           <div className='info__card'>
             <div className='card__header'>

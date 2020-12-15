@@ -5,7 +5,7 @@ export default function Footer({ currentScreen, setCurrentScreen }) {
     <div className="footer-w">
       <div className="footer__main__content">
         <div className="footer__logo__section">
-          <div className="footer__logo" onClick={() => setCurrentScreen('feature')}>CodeExpert</div>
+          <div className="footer__logo" onClick={() => setCurrentScreen('feature')}>CODXPERT</div>
           <p className="footer__bio">
             Our Web Development program is designed to prepare students
             for real work environments and make them skilled engineers with

@@ -29,7 +29,7 @@ export default class Feature extends Component {
     return (
       <div className='feature__text'>
         <h1 className='feature__text__header'>Become a <span>web developer</span> by building real world projects</h1>
-        <p className='feature__text__desc'>With CodeExpert, by building dozens of real world projects with enterprise level professionals, programing makes much more sense</p>
+        <p className='feature__text__desc'>With codxpert, by building dozens of real world projects with enterprise level professionals, programing makes much more sense</p>
         <Button currentScreen={'register'} screenName='register' onClick={this.setScreen} bgRequired={true} />
         <div
           onClick={() => document.getElementById('#more').scrollIntoView(

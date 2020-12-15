@@ -9,6 +9,7 @@ import Pricing from "./containers/Pricing";
 import Register from "./containers/Register";
 import More from "./containers/More";
 import Footer from './containers/Footer';
+import logoIcon from './assets/logo.svg'
 class App extends React.Component {
   state = {
     currentScreen: "feature",
@@ -38,7 +39,7 @@ class App extends React.Component {
       case "curriculum":
         return <Syllabus />;
       case "pricing":
-        return <Pricing setCurrentScreen={this.setCurrentScreen}/>;
+        return <Pricing setCurrentScreen={this.setCurrentScreen} />;
       case "register":
         return <Register />;
       default:
@@ -67,7 +68,8 @@ class App extends React.Component {
           className="header__logo"
           onClick={() => this.setCurrentScreen("feature")}
         >
-          codXpert
+          <img src={logoIcon} alt='codexpert logo' />
+          CODXPERT
           </div>
         <div className="header__btns">
           <Button currentScreen={currentScreen} screenName='projects' onClick={this.setCurrentScreen} />
