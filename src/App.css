@@ -12,7 +12,10 @@
   --secondary: #F1FBFF;
   --black: #132A3A;
   --white: #FFFFFF;
+  --bgSecondary: #FBFEFF;
 }
+
+
 
 .container {
   width: 100%;

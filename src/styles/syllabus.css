@@ -1,8 +1,133 @@
 .syllabus-w {
-  height: 94vh;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 0 200px;
-  background-color: var(--secondary);
+  background-color: var(--bgSecondary);
   overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.syllabus-header{
+  margin: 70px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.syllabus-header h3{
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.syllabus-header p{
+  font-size: 16px;
+  line-height: 26px;
+  color: #374E70;
+}
+
+.syllabus-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  border-top: 0.2px solid #253A4E;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+
+.program-weeks-w {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 70%;
+  max-width: 700px;
+  flex-wrap: wrap;
+}
+
+.program-weeks {
+  max-width: 340px;
+  font-size: 14px;
+  color: #374E70;
+  margin-bottom: 10px;
+}
+
+.program-weeks span {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.program-steps-w {
+  width: 25%;
+  min-width: 310px;
+  height: 615px;
+  display: flex;
+}
+
+.program-steps-img {
+  margin: 0 20px;
+}
+
+.program-step {
+  margin-bottom: 20px;
+  margin-top: 3px; 
+}
+
+.program-step--last {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.program-step p{
+  margin-top: 5px;
+  color: #374E70;
+  font-size: 14px;
+}
+
+.program-step span {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .syllabus-w {
+    padding:  0 80px;
+  }
+  .syllabus-content {
+    flex-direction: column;
+  }
+
+  .program-weeks-w { 
+    min-width: 100%;
+    justify-content: center;
+  }
+
+  .program-weeks {
+    max-width: 100%;
+  }
+
+  .program-steps-w {
+    width: 80%;
+    min-width: 400px;
+    max-height: 615px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .program-step {
+    margin-bottom: 80px;
+    margin-top: 3px; 
+  }
+
+  .program-step--last {
+    margin-top: 85px;
+  }
+
+  .program-steps-img {
+    margin: 0;
+    margin-right: 10px;
+  }
+
 }
