@@ -166,3 +166,11 @@
   }
 }
 
+
+@media screen and (max-width: 360px) {
+  .header {
+    padding: 0 25px;
+  }
+
+}
+

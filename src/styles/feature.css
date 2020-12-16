@@ -138,6 +138,8 @@
     padding:  50px 80px;
     height: auto;
     position: unset;
+    justify-content: flex-start;
+    flex-direction: column;
   }
   .feature__text {
     width: 100%;
@@ -170,4 +172,14 @@
     margin-right: 0 !important;
 
   }
+}
+
+@media screen and (max-width: 500px) {
+    .feature {
+      background-image: none;
+      padding:  50px 20px;
+      height: auto;
+      position: unset;
+    }
+
 }
