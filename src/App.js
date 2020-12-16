@@ -13,6 +13,7 @@ import logoIcon from './assets/logo.svg'
 class App extends React.Component {
   state = {
     currentScreen: "feature",
+    openDropDwonMenu: false
   };
 
   setCurrentScreen = (screenName) => {
@@ -27,7 +28,17 @@ class App extends React.Component {
     this.setState({
       currentScreen: screenName,
     });
+
+    if(this.state.openDropDwonMenu) {
+      this.handleDropDwonMenu()
+    }
   };
+
+  handleDropDwonMenu = () => {
+    this.setState({
+      openDropDwonMenu: !this.state.openDropDwonMenu
+    })
+  }
 
   renderCurrentScreen = () => {
     const { currentScreen } = this.state;
@@ -71,12 +82,20 @@ class App extends React.Component {
           <img src={logoIcon} alt='codexpert logo' />
           CODXPERT
           </div>
-        <div className="header__btns">
+        <div className="header__btns-desktop">
           <Button currentScreen={currentScreen} screenName='projects' onClick={this.setCurrentScreen} />
           <Button currentScreen={currentScreen} screenName='curriculum' onClick={this.setCurrentScreen} />
           <Button currentScreen={currentScreen} screenName='pricing' onClick={this.setCurrentScreen} />
           <Button currentScreen={currentScreen} screenName='register' onClick={this.setCurrentScreen} bgRequired={true} />
         </div>
+
+        <div className='header__burger-menu' onClick={this.handleDropDwonMenu}>|||</div>
+      { this.state.openDropDwonMenu ? <div className="header__btns-mobile">
+          <Button currentScreen={currentScreen} screenName='projects' onClick={this.setCurrentScreen} />
+          <Button currentScreen={currentScreen} screenName='curriculum' onClick={this.setCurrentScreen} />
+          <Button currentScreen={currentScreen} screenName='pricing' onClick={this.setCurrentScreen} />
+          <Button currentScreen={currentScreen} screenName='register' onClick={this.setCurrentScreen} bgRequired={true} />
+        </div> : null}
       </div>
     )
   }
