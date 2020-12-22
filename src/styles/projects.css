@@ -67,7 +67,7 @@
   box-sizing: border-box;
   width: 32%;
   max-width: 370px;
-  min-width: 270px;
+  min-width: 300px;
   height: 472px;
   background: #FFFFFF;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
@@ -173,13 +173,20 @@
     padding: 10px;
     padding-top: 30px;
   }
+
+  .projects__header {
+    border-bottom: none;
+  }
   .projects__header__btns-w {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    border: none;
+    width: 100%;
   }
 
   .projects__header__btn{
     font-size: 15px;
+    margin: 0 10px;
   }
 
   .projects__list { 
@@ -187,7 +194,10 @@
   }
 
   .projects__list-item {
-    margin: 10px
+    margin: 10px;
+    width: 100%;
+    max-width: 370px;
+    min-width: 280px;
   }
   .tags-item {
     height: 25px;
