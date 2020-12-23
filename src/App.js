@@ -1,5 +1,5 @@
 import React from "react";
-import { AnimateOnChange } from "react-animation";
+// import { AnimateOnChange } from "react-animation";
 import "./App.css";
 import Button from './containers/helpers/Button';
 import Feature from "./containers/Feature";
