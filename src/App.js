@@ -29,7 +29,7 @@ class App extends React.Component {
       currentScreen: screenName,
     });
 
-    if (this.state.openDropDwonMenu) {
+    if(this.state.openDropDwonMenu) {
       this.handleDropDwonMenu()
     }
   };
@@ -62,9 +62,9 @@ class App extends React.Component {
     return (
       <div className="container">
         {this.renderHeaderNav()}
-        {/* <AnimateOnChange animation="fade" className="full-width"> */}
-        {this.renderCurrentScreen()}
-        {/* </AnimateOnChange> */}
+        <AnimateOnChange animation="fade" className="full-width">
+          {this.renderCurrentScreen()}
+        </AnimateOnChange>
         {currentScreen === "feature" ? <More onScreenChange={this.setCurrentScreen} /> : null}
         <Footer currentScreen={this.state.currentScreen} setCurrentScreen={this.setCurrentScreen} />
       </div>
@@ -90,7 +90,7 @@ class App extends React.Component {
         </div>
 
         <div className='header__burger-menu' onClick={this.handleDropDwonMenu}>|||</div>
-        { this.state.openDropDwonMenu ? <div className="header__btns-mobile">
+      { this.state.openDropDwonMenu ? <div className="header__btns-mobile">
           <Button currentScreen={currentScreen} screenName='projects' onClick={this.setCurrentScreen} />
           <Button currentScreen={currentScreen} screenName='curriculum' onClick={this.setCurrentScreen} />
           <Button currentScreen={currentScreen} screenName='pricing' onClick={this.setCurrentScreen} />

@@ -140,7 +140,6 @@
     position: unset;
     justify-content: flex-start;
     flex-direction: column;
-    min-width: 280px;
   }
   .feature__text {
     width: 100%;
@@ -157,17 +156,12 @@
 
   .feature__perks-w {
     width: 100%;
-    min-width: 300px;
+    min-width: 350px;
     height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    transform: none;
-    margin-top: 40px;
   }
 
   .feature__perks__card {
