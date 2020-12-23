@@ -136,11 +136,31 @@
   }
 
   .info__why {
-    padding: 50px
+    padding: 20px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .info__why img {
+    display: none;
   }
 
   .why__desc {
-    margin-left: 30px;
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why__desc p {
+    margin-top: 50px;
+  }
+
+  .why__desc ul {
+    margin-bottom: 40px;
   }
 
   .info__cards-w{
