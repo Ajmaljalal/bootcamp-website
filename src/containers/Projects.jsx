@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { projects } from './data'
-import listIcon from '../assets/list.svg'
-import gridIcon from '../assets/grid.svg'
 
 export default class Projects extends Component {
 
