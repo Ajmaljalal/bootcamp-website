@@ -48,14 +48,10 @@ export default class Projects extends Component {
       <div className='projects-w'>
         <div className='projects__header'>
           <div className='projects__header__btns-w'>
-            <div className={projects === 'html' ? 'projects__header__btn projects__header__btn--border-bottom' : 'projects__header__btn'} onClick={() => this.setCurrentProjectsTab('html')}>HTML & CSS</div>
-            <div className={projects === 'javascript' ? 'projects__header__btn projects__header__btn--border-bottom' : 'projects__header__btn'} onClick={() => this.setCurrentProjectsTab('javascript')}>Vanila JavaScript</div>
-            <div className={projects === 'react' ? 'projects__header__btn projects__header__btn--border-bottom' : 'projects__header__btn'} onClick={() => this.setCurrentProjectsTab('react')}>React & Redux</div>
-            <div className={projects === 'node' ? 'projects__header__btn projects__header__btn--border-bottom' : 'projects__header__btn'} onClick={() => this.setCurrentProjectsTab('node')}>Node, Express & Databases</div>
-          </div>
-          <div className='projects__view-icons'>
-            <img src={listIcon} alt='list view' />
-            <img src={gridIcon} alt='grid view' />
+            <div className={projects === 'html' ? 'projects__header__btn projects__header__btn--border-bottom' : 'projects__header__btn'} onClick={() => this.setCurrentProjectsTab('html')}>HTML/CSS</div>
+            <div className={projects === 'javascript' ? 'projects__header__btn projects__header__btn--border-bottom' : 'projects__header__btn'} onClick={() => this.setCurrentProjectsTab('javascript')}>JS</div>
+            <div className={projects === 'react' ? 'projects__header__btn projects__header__btn--border-bottom' : 'projects__header__btn'} onClick={() => this.setCurrentProjectsTab('react')}>React</div>
+            <div className={projects === 'node' ? 'projects__header__btn projects__header__btn--border-bottom' : 'projects__header__btn'} onClick={() => this.setCurrentProjectsTab('node')}>Node</div>
           </div>
         </div>
         <div className='projects__list'>

@@ -20,7 +20,7 @@
 .projects__header__btns-w {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 60%;
 }
 
 .projects__header__btn {
@@ -73,6 +73,7 @@
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
   border-radius: 2px;
 }
+
 
 .list-item__icon{
   display: flex;
@@ -169,14 +170,25 @@
 
 @media screen and (max-width: 1124px) {
   .projects-w {
-    padding: 50px;
+    padding: 10px;
+    padding-top: 30px;
   }
   .projects__header__btns-w {
     display: flex;
     justify-content: space-between;
-    width: 85%;
   }
 
+  .projects__header__btn{
+    font-size: 15px;
+  }
+
+  .projects__list { 
+    justify-content: center;
+  }
+
+  .projects__list-item {
+    margin: 10px
+  }
   .tags-item {
     height: 25px;
     padding: 0 10px;

@@ -58,7 +58,7 @@
 
 .header__logo img {
   width: 70px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .header__burger-menu {
@@ -125,6 +125,10 @@
     width: 150px;
     font-weight: 700;
     font-size: 20px;
+  }
+
+  .header__logo img {
+    width: 50px
   }
 
   .header__btns-desktop {

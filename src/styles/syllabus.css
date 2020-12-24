@@ -93,7 +93,12 @@
 
 @media screen and (max-width: 1024px) {
   .syllabus-w {
-    padding:  0 80px;
+    padding:  0 20px;
+    min-width: 300px;
+  }
+
+  .syllabus-header p {
+    text-align: center;
   }
   .syllabus-content {
     flex-direction: column;
@@ -109,20 +114,19 @@
   }
 
   .program-steps-w {
-    width: 80%;
-    min-width: 400px;
+    width: 310px;
+    min-width: 300px;
     max-height: 615px;
     margin: 0 auto;
     margin-top: 40px;
   }
 
   .program-step {
-    margin-bottom: 80px;
-    margin-top: 3px; 
+    margin-bottom: 40px;
   }
 
   .program-step--last {
-    margin-top: 85px;
+    margin-top: 39px;
   }
 
   .program-steps-img {
